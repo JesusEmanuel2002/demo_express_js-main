@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 #{title}
+    form(action='/confirmacion-sesion', method='GET' class='inicio-sesion')
+      input(type='text', name='q', placeholder='Nombre')
+      input(type='text', name='q', placeholder='Correo')
+      button(type='submit') Registrase
